@@ -5,25 +5,89 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Andy Wauters – Portfolio</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
-    header { background: #222; color: white; padding: 2rem; text-align: center; }
-    section { padding: 2rem; max-width: 900px; margin: auto; background: white; margin-top: 1rem; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    .project, .education, .experience { margin-bottom: 1.5rem; }
-    h2 { border-bottom: 1px solid #ccc; padding-bottom: 0.3rem; }
-    .links a { margin-right: 1rem; color: #0077b5; text-decoration: none; }
-    footer { text-align: center; padding: 2rem; color: #777; font-size: 0.9rem; }
+    body { 
+        font-family: Arial, sans-serif; 
+        margin: 0; 
+        padding: 0; 
+        background: #f4f4f4; 
+        color: #333; 
+    }
+    header { 
+        background: #222; 
+        color: white; 
+        padding: 2rem; 
+        text-align: center; 
+    }
+    section { 
+        padding: 2rem; 
+        max-width: 900px; 
+        margin: auto; 
+        background: white; 
+        margin-top: 1rem; 
+        border-radius: 10px; 
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    }
+    .project, .education, .experience { 
+        margin-bottom: 1.5rem; 
+    }
+    h2 { 
+        border-bottom: 1px solid #ccc; 
+        padding-bottom: 0.3rem; 
+    }
+    .links a { 
+        margin-right: 1rem; 
+        color: #0077b5; 
+        text-decoration: none; 
+    }
+    footer { 
+        text-align: center; 
+        padding: 2rem; 
+        color: #777; 
+        font-size: 0.9rem; 
+    }
+    .badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 1.5rem;
+    }
+    .badges span {
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        color: white;
+    }
+    .backend span {
+        background-color: #0077b5; /* blauw */
+    }
+    .frontend span {
+        background-color: #f39c12; /* oranje */
+    }
+    .mobile span {
+        background-color: #8e44ad; /* paars */
+    }
+    .database span {
+        background-color: #27ae60; /* groen */
+    }
+    .tools span {
+        background-color: #2c3e50; /* donkergrijs */
+    }
+    p.aboutme {
+        line-height: 25px;
+    }
   </style>
 </head>
 <body>
 
 <header>
+  <img src="Agromanager Jan 24 -34.jpg" alt="Andy Wauters" style="width:250px; border-radius: 100%;">
   <h1>Andy Wauters</h1>
   <p>Software Developer – .NET specialist</p>
 </header>
 
 <section>
   <h2>Over mij</h2>
-  <p>
+  <p class="aboutme">
     Software Developer bij Agromanager sinds eind 2020. Hier ben ik elke dag bezig met het verder ontwikkelen van mijn vaardigheden en het verfijnen van mijn expertise.
     Mijn carrièrepad is echter niet standaard: van schrijnwerker naar softwareontwikkelaar, heb ik mezelf omgeschoold om mijn passie voor technologie te volgen.
     Ik heb een graduaat behaald in avondschool en ben momenteel bezig met mijn professionele bachelor in afstandsonderwijs.
@@ -33,17 +97,47 @@
 </section>
 
 <section>
+    <h2>Vaardigheden</h2>
+  
+    <h3>Back-end</h3>
+    <div class="badges backend">
+      <span>C#</span><span>.NET</span><span>Python</span><span>Java</span><span>Node.js</span><span>Spring Framework</span>
+    </div>
+  
+    <h3>Front-end</h3>
+    <div class="badges frontend">
+      <span>JavaScript</span><span>React</span><span>HTML</span><span>CSS</span><span>TypeScript</span><span>jQuery</span>
+    </div>
+  
+    <h3>Mobile</h3>
+    <div class="badges mobile">
+      <span>Kotlin</span><span>React Native</span>
+    </div>
+  
+    <h3>Database</h3>
+    <div class="badges database">
+      <span>MongoDB</span><span>Neo4j</span><span>Redis</span><span>SQL Server</span><span>Firebase</span><span>MySQL</span><span>SQL</span>
+    </div>
+  
+    <h3>Tools & Methodologie</h3>
+    <div class="badges tools">
+      <span>Git</span><span>Agile/Scrum</span><span>TDD</span><span>SSMS</span><span>Postman</span><span>Azure Data Studio</span>
+      <span>Azure Portal</span><span>Azure Storage Explorer</span><span>Android Studio</span><span>Visual Studio</span><span>...</span>
+    </div>
+  </section>
+
+<section>
   <h2>Projecten</h2>
   <div class="project">
-    <h3>📌 Geography_REST_Service</h3>
+    <h3>📌 Geography REST Service</h3>
     <p>REST-service voor geografische data zoals landen, rivieren en steden.</p>
     <p><strong>Technologieën:</strong> C#</p>
     <a href="https://github.com/NDWauters/Geography_REST_Service" target="_blank">💻 GitHub</a>
   </div>
   <div class="project">
-    <h3>📌 webshop</h3>
+    <h3>📌 Webshop</h3>
     <p>Eenvoudige webshop applicatie.</p>
-    <p><strong>Technologieën:</strong> JavaScript</p>
+    <p><strong>Technologieën:</strong> JavaScript, React Native, Firebase</p>
     <a href="https://github.com/NDWauters/webshop" target="_blank">💻 GitHub</a>
   </div>
   <div class="project">
@@ -53,18 +147,27 @@
     <a href="https://github.com/NDWauters/Splendor" target="_blank">💻 GitHub</a>
   </div>
   <div class="project">
-    <h3>📌 Fleet_Management</h3>
-    <p>Beheersysteem voor voertuigen.</p>
+    <h3>📌 Fleet Management</h3>
+    <p>Beheersysteem voor voertuigen. Dit was het eindproject voor de mijn graduaat Progarmmeren.</p>
     <p><strong>Technologieën:</strong> C#</p>
     <a href="https://github.com/NDWauters/Fleet_Management" target="_blank">💻 GitHub</a>
   </div>
   <div class="project">
-    <h3>📌 Olympic-Games</h3>
+    <h3>📌 Olympic Games</h3>
     <p>Webapplicatie rond de Olympische Spelen, ontwikkeld in het kader van een programmeervak. Gebouwd met Java en Spring Framework.</p>
     <p><strong>Technologieën:</strong> Java, Spring Framework</p>
     <a href="https://github.com/NDWauters/Olympic-Games" target="_blank">💻 GitHub</a>
   </div>
 </section>
+
+<section>
+    <h2>Werkervaring</h2>
+    <div class="experience">
+      <p><strong>.NET Developer</strong> bij Agromanager (dec 2020 – heden)</p>
+      <p>Ontwikkeling en onderhoud van softwaretoepassingen in de fruitteeltsector met focus op .NET.</p>
+    </div>
+  </section>
+  
 
 <section>
   <h2>Opleidingen</h2>
@@ -76,24 +179,6 @@
     <p><strong>HOGENT</strong> – Graduaat Programmeren (2019 – 2022)</p>
     <p>Onderwijsvorm: avondschool</p>
   </div>
-</section>
-
-<section>
-  <h2>Werkervaring</h2>
-  <div class="experience">
-    <p><strong>.NET Developer</strong> bij Agromanager (dec 2020 – heden)</p>
-    <p>Ontwikkeling en onderhoud van softwaretoepassingen in de fruitteeltsector met focus op .NET.</p>
-  </div>
-</section>
-
-<section>
-  <h2>Vaardigheden</h2>
-  <ul>
-    <li>SQL, C#, .NET, ASP.NET</li>
-    <li>JavaScript, React.js, Node.js, React Native, jQuery</li>
-    <li>HTML, CSS, Spring Framework, Python</li>
-    <li>Design patterns, agile werken, teamcollaboratie</li>
-  </ul>
 </section>
 
 <section>
